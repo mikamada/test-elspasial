@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import CardNews from "./CardNews";
 
@@ -6,9 +6,13 @@ const News = () => {
 	const [articles, setArticles] = useState([]);
 
 	const fetchArticles = async () => {
-		const response = await fetch(process.env.NEXT_PUBLIC_API);
-		const news = await response.json();
-		setArticles(news);
+		try {
+			const response = await fetch(process.env.NEXT_PUBLIC_API);
+			const news = await response.json();
+			setArticles(news);
+		} catch (error) {
+			console.log(error);
+		}
 	};
 
 	useEffect(() => {
@@ -32,7 +36,12 @@ const News = () => {
 			</p>
 			<div className="w-full md:min-h-[486px] h-fit grid lg:grid-cols-3 md:grid-cols-2 md:gap-4 grid-cols-1 mt-6">
 				{articles.articles?.map((item, idx) => (
-					<CardNews key={idx} title={item?.title} image={item?.urlToImage} description={item?.description} />
+					<CardNews
+						key={idx}
+						title={item?.title}
+						image={item?.urlToImage}
+						description={item?.description}
+					/>
 				))}
 			</div>
 		</section>

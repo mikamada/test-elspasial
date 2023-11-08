@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const index = () => {
 	useEffect(() => {
 		Aos.init();
-	})
+	},[])
 	return (
 		<Container classnames={"bg-color-dark-blue"}>
 			<div className="flex flex-col justify-center items-center mb-8 text-color-primary">
