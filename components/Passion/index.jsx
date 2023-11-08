@@ -1,8 +1,14 @@
-import React from "react";
+"use client";
 import Container from "../Container";
 import CardPassion from "./CardPassion";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const index = () => {
+	useEffect(() => {
+		Aos.init();
+	})
 	return (
 		<Container classnames={"bg-color-dark-blue"}>
 			<div className="flex flex-col justify-center items-center mb-8 text-color-primary">
@@ -29,7 +35,7 @@ const index = () => {
 					count={"20"}
 				/>
 			</div>
-			<div className="w-full h-fit bg-color-light-blue rounded-2xl lg:py-[70px] md:scroll-py-14 py-12 lg:px-[53px] md:px-4 px-4 text-color-primary flex justify-between lg:mt-[200px] md:mt-[100px] mt-8 relative">
+			<div className="w-full h-fit bg-color-light-blue rounded-2xl lg:py-[70px] md:scroll-py-14 py-12 lg:px-[53px] md:px-4 px-4 text-color-primary flex justify-between lg:mt-[200px] md:mt-[100px] mt-8 relative" data-aos="fade-up">
 				<div className="flex flex-col gap-4">
 					<h2 className="md:text-[40px] text-3xl font-bold">Subscribe news letter</h2>
 					<p className="text-lg md:w-[70%] w-full">

@@ -5,6 +5,7 @@ import { ImFacebook2 } from "react-icons/im";
 import { AiFillInstagram } from "react-icons/ai";
 
 const index = () => {
+	const href = ["About Us", "Career", "Contact Us"];
 	return (
 		<footer className="w-full lg:h-[440px] md:h-full h-full bg-color-light-blue py-[60px] md:px-[120px] sm:px-14 px-6 text-color-primary flex lg:flex-row flex-col gap-4 bottom-0">
 			<div className="lg:w-1/2 w-full">

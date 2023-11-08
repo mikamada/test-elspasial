@@ -4,6 +4,7 @@ import News from "@/components/News";
 import Passion from "@/components/Passion";
 import Footer from "@/components/Footer";
 
+
 const page = () => {
 	return (
 		<main>
