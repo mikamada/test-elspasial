@@ -44,18 +44,18 @@ const index = () => {
 							className="h-12 md:w-[552px] w-full md:rounded-full rounded-lg px-6 text-[#A1A1A1] outline-none"
 							placeholder="Input email"
 						/>
-						<button className="md:w-[180px] w-full h-12 bg-color-orange text-color-primary font-medium md:rounded-full rounded-lg md:absolute end-0 md:mt-0 mt-2">
+						<button className="md:w-[180px] w-full h-12 bg-color-orange text-color-primary font-medium md:rounded-full rounded-lg md:absolute end-0 md:mt-0 mt-2 cursor-pointer">
 							Send Email
 						</button>
 					</div>
 					<p className="text-xs">
-						This site is protected by reCAPTCHA and the Google{" "}
-						<a href="" className="underline">
+						This site is protected by reCAPTCHA and the Google
+						<span> <a href="" className="underline">
 							Privacy Policy
-						</a>
-						and{" "}
+						</a></span>
+						<span> and </span>
 						<a href="" className="underline">
-							Terms of Service apply
+							 Terms of Service apply
 						</a>
 						.
 					</p>

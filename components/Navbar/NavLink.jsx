@@ -12,13 +12,13 @@ const DropdownMenu = () => {
 
 	return (
 		<div className="relative">
-			<button className="text-[#D6D6D6] flex justify-between items-center gap-2" onClick={toggleDropdown}>
+			<button className="text-[#D6D6D6] hover:text-color-primary flex justify-between items-center gap-2" onClick={toggleDropdown}>
 				Product <IoIosArrowDown scale={20} />
 			</button>
 			{isDropdownOpen && (
 				<div className="absolute w-[150px] h-fit top-8 right-0 bg-color-primary rounded-lg p-2 text-[#090227] flex flex-col px-3 py-3">
 					{/* Add your dropdown content here */}
-					<Link href={"/product/feature1"}>product 1</Link>
+					<Link href={"/product/feature1"} >product 1</Link>
 					<Link href={"/product/feature2"}>product 2</Link>
 					<Link href={"/product/feature3"}>product 3</Link>
 				</div>
@@ -34,10 +34,10 @@ const NavLink = () => {
 				About Us
 			</Link>
 			<DropdownMenu />
-			<Link href={"/"} className="text-[#D6D6D6]">
+			<Link href={"/"} className="text-[#D6D6D6] hover:text-color-primary">
 				Project
 			</Link>
-			<Link href={"/"} className="text-[#D6D6D6]">
+			<Link href={"/"} className="text-[#D6D6D6] hover:text-color-primary">
 				Career
 			</Link>
 			<button className="w-40 h-12 flex justify-center items-center border border-color-primary rounded-full hover:bg-color-orange transition-all hover:border-color-orange">
